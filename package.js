@@ -9,4 +9,5 @@ Npm.depends({
 // even though we're serving minified, dynamic loading would be nice
 Package.on_use(function (api) {
 	api.add_files('phantom.js', 'server');
+	api.export('phantomjs', 'server');
 });
